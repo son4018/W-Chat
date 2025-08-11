@@ -7,7 +7,7 @@ function App() {
   return (
 
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/W-Chat/">
         <Routes>
           <Route index element={<LandingPage />} />
           <Route path="/chat" element={<Chat />} />
