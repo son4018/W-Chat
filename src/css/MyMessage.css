@@ -1,0 +1,30 @@
+.my-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(255, 255, 255, 0.8);
+    padding: 5px 8px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mymessage-chat-bubble {
+    /* background-color: aqua; */
+    height: fit-content;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.MyMessage {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.timestamp-mymessage {
+  font-size: 0.7rem;
+  color: #777;
+  margin-top: 4px;
+  display: block;
+  text-align: right;
+}

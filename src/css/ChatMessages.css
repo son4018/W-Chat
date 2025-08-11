@@ -1,0 +1,14 @@
+
+.chat-container {
+    background-color: rgba(192, 149, 149, 0.1);
+    height: fit-content;
+    width: fit-content;
+    max-width: 280px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    justify-content: space-between;
+    border-radius: 12px;
+    border: 1px solid black;
+    color: white;
+}

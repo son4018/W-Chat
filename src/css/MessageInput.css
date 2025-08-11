@@ -1,0 +1,47 @@
+.MessageInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px; /* Adjust height as needed */
+    /* background-color: aquamarine; */
+    justify-content: space-between;
+    padding:  0px 20px;
+}
+
+.message-input {
+    height: 40px; 
+    width: 640px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255, 0.1);
+    border-style: none;
+    padding: 0 5px;
+    color: white;
+
+}
+
+.send-button-text {
+    height: 45px;
+    width: 100px;
+    background-color: rgb(225, 225, 225, 0);
+    color: white;
+    border-style: none;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.send-button-text:hover {
+    transform: rotate(0.1turn);
+}
+
+
+
+.send-button-text:active {
+    transform: rotate(0.1turn) scale(0.85);
+
+}
