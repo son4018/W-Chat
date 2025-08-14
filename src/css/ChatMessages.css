@@ -1,4 +1,3 @@
-
 .chat-container {
     background-color: rgba(192, 149, 149, 0.1);
     height: fit-content;
@@ -11,4 +10,10 @@
     border-radius: 12px;
     border: 1px solid black;
     color: white;
+}
+
+.chat {
+    word-wrap: break-word;
+    word-break: break-word;
+    max-width: 100%;
 }
