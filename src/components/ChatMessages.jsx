@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import "../css/ChatMessages.css";
 import SentMessage from "../components/SentMessage";
 import MyMessage from "./MyMessage";
+import SystemMessage from '../components/SystemMessage';
+
 import { db, auth } from "../firebase";
 import { collection, query, orderBy, onSnapshot } from "firebase/firestore";
 
@@ -26,13 +28,19 @@ function ChatMessages({ scrollRef }) {
 
   return (
     <>
-      {messages.map((msg) =>
-        msg.uid === currentUserUid ? (
-          <MyMessage key={msg.id} text={msg.text} timestamp={msg.createdAt} />
-        ) : (
-          <SentMessage key={msg.id} name={msg.displayName} text={msg.text} timestamp={msg.createdAt} />
-        )
-      )}
+      {messages.map((msg) => {
+        if (msg.type === "user_joined" || msg.type === "user_left" ) {
+        return <SystemMessage key={msg.id} text={msg.text}/>;
+        }
+
+        else if (msg.uid === currentUserUid) {
+          return <MyMessage key={msg.id} text={msg.text} timestamp={msg.createdAt} />;
+        }
+
+        else {
+          return <SentMessage key={msg.id} name={msg.displayName} text={msg.text} timestamp={msg.createdAt} />;
+        }
+      })}
     </>
   );
 }

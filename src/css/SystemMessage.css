@@ -1,0 +1,10 @@
+.SystemMessage {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.system-message-text {
+    color: #dadfdd;
+    font-size: 13px;
+}

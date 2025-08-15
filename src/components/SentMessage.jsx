@@ -11,7 +11,7 @@ function SentMessage({name, text, timestamp}) {
         <div className="chat-container">
               <div className="chat">{text}</div>
         </div>  
-        <span className="timestamp-sentmessage">{timestamp || "now"}</span>
+        <span className="timestamp-sentmessage">{timestamp || "Now"}</span>
         </div>
     </div>
   );
